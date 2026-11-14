@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0c20, #150e28, #1f1135);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    align-items: center;
+}
+
+.navbar li a {
+    display: block;
+    padding: 14px 16px;
+    color: #ffffff;
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 0.85rem;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+.navbar li a:hover {
+    background-color: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+}
+
+.btn-nav-login {
+    background-color: #ffd700;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.btn-nav-login:hover {
+    background-color: #ffa000;
+}
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Kunci: Membuat Logo & Tagline bertumpuk atas-bawah */
+    align-items: center; /* Membuat semua konten di tengah-tengah */
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px; /* Jarak aman biar nggak nabrak atas */
+    box-sizing: border-box;
+}
+
+
+.hero-logo {
+    max-width: 400px; /* Atur lebar maksimal logo, silakan dikecilkan lagi jika kurang pas */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; 
+    display: block;
+    filter: drop-shadow(0 0 15px rgba(255, 42, 95, 0.25)); 
+}
+
+
+.hero-tagline {
+    font-size: 1.35rem; 
+    font-weight: 600;
+    color: #e0dced;
+    max-width: 650px; 
+    line-height: 1.5;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+@keyframes glowBlink {
+    0%, 100% {
+        opacity: 1;
+        filter: drop-shadow(0 0 12px rgba(255, 42, 95, 0.8));
+    }
+    50% {
+        opacity: 0.4;
+        filter: drop-shadow(0 0 2px rgba(255, 42, 95, 0.1));
+    }
+}
+
+.glow-blink {
+    animation: glowBlink 2.5s infinite ease-in-out;
+}
